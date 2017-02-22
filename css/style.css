@@ -276,6 +276,7 @@ ul.menu-click {
   margin-bottom: 26px;
   width: 150px;
   color: #6E6F71;
+  border-radius: 5px;
 }
 .sunica-donate p {
   font-size: 1.5em;
@@ -286,6 +287,7 @@ ul.menu-click {
 .sunica-donate .progress {
   height: 29px;
   margin-bottom: 1px;
+  border-radius: 4px;
 }
 .progress-bar-success:last-child.progress-bar:before {
   background-color: #eee;
