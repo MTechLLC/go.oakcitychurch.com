@@ -1,8 +1,16 @@
 (function() {
+  $('#cross-portfolio').css({'position':'absolute'});
+
   //preloader
   $(window).load(function() {
     $('#preloader').delay(2000).fadeOut('slow');
   });
+
+$(window).scroll(function(){
+  if($(this).scrollTop() === 0 ) {
+    $('#cross-portfolio').css({'position':'absolute'});
+  }
+});
 
   // detect if IE
   var ie = (function() {
@@ -120,6 +128,7 @@
       if (reveal) {
         noscroll = false;
         enable_scroll();
+          $('#cross-portfolio').removeAttr('style');
       }
     }, 600);
   }
